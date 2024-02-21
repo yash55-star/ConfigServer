@@ -1,9 +1,6 @@
-server:
-  port: 42060
+
 
 spring:
-  application:
-    name: document-service
   cassandra:
     contactPoints: localhost
     username: admin
