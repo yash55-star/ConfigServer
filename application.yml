@@ -1,0 +1,51 @@
+server:
+  port: 42060
+
+spring:
+  application:
+    name: document-service
+  cassandra:
+    contactPoints: localhost
+    username: admin
+    password: admin
+    local-datacenter: datacenter1
+    keyspace-name: test
+    port: 9042
+#  data:
+#    cassandra:
+#      keyspace-name: test
+#      port: 9042
+  servlet:
+    multipart:
+      max-file-size: 10MB  # Set your desired file size limit
+      max-request-size: 10MB  # Set your desired request size limit
+upload:
+    file:
+      maxSize: 10485760
+#  config:
+#    import: configserver:${config-server-url}
+#  cloud:
+#    bus:
+#      enabled: true
+#      refresh:
+#        enabled: true
+aws:
+  bucket:
+    name: javastorageexp
+  region: us-east-1
+  accesskey: AKIAYD5ITS7D6X5FHAM6
+  secretkey: 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
+
+cassandra:
+  migration:
+    keyspaceName: test
+    tablePrefix: t
+
+
+#spring:
+#  data:
+#    cassandra:
+#      keyspace-name: test
+#      port: 9042
+
+
