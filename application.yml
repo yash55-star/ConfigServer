@@ -33,12 +33,6 @@ eureka:
 #      enabled: true
 #      refresh:
 #        enabled: true
-aws:
-  bucket:
-    name: javastorageexp
-  region: us-east-1
-  accesskey: AKIAYD5ITS7D6X5FHAM6
-  secretkey: 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
 
 cassandra:
   migration:
