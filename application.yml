@@ -1,5 +1,4 @@
 
-
 spring:
   cassandra:
     contactPoints: localhost
@@ -19,6 +18,14 @@ spring:
 upload:
     file:
       maxSize: 10485760
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER_ADDRESS:http://localhost:8761/eureka}
 #  config:
 #    import: configserver:${config-server-url}
 #  cloud:
@@ -37,12 +44,5 @@ cassandra:
   migration:
     keyspaceName: test
     tablePrefix: t
-
-
-#spring:
-#  data:
-#    cassandra:
-#      keyspace-name: test
-#      port: 9042
 
 
